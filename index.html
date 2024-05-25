@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Compliance App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Legal Compliance App</h1>
+    </header>
+    <main>
+        <section id="uploadSection">
+            <h2>Upload Legal Document and Contract</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="lawFile">Law Document:</label>
+                    <input type="file" id="lawFile" name="lawFile" accept=".pdf,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="contractFile">Contract Document:</label>
+                    <input type="file" id="contractFile" name="contractFile" accept=".pdf,.docx" required>
+                </div>
+                <button type="button" id="uploadButton">Upload</button>
+            </form>
+        </section>
+        <section id="resultsSection">
+            <h2>Analysis Results</h2>
+            <div id="results"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Legal Compliance App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
